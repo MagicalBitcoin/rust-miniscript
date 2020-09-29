@@ -169,7 +169,7 @@ impl<K: InnerXKey> DescriptorXKey<K> {
         };
 
         if compare_fingerprint == fingerprint && compare_path == path_excluding_wildcard {
-            Some(path.clone())
+            Some(path_excluding_wildcard)
         } else {
             None
         }
